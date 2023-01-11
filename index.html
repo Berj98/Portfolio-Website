@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="Hello, I'm Berj Ghazarian, I offer free services and creating websites ">
+    <title>Berj Ghazarian</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@0,600;0,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/Berj.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+    <a href="#main" class="logo">Berj</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#service">Service</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- end header section -->
+
+    <!-- main section -->
+    <section class="main" id="main">
+        <div>
+            <h2>Hello, I'm Berj Ghazarian <br> <span class="auto-type"></span></h2>
+            <h3>I offer free services and creating websites</h3>
+            <a href="#service" class="main-btn">View My Services</a>
+            <a href="CV.pdf" download class="resume">Download CV</a>
+            <div class="social-icon">
+                <a href="https://www.facebook.com/berj.ghazarian.9/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/berjo__1998/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Berj98" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- end main section  -->
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <fieldset>
+            <legend>About me</legend>
+            <div class="about-text">
+                <h3 class="main-title">About me</h3>
+                <p>Hello, my name is Berj ghazarian and I'm 24 years old,
+                    I'm a junior web designer. <br> <br>
+                    I provide free services for designing several services for my
+                    customers.
+                </p>
+            </div>
+        </fieldset>
+        <div class="about-image">
+            <img src="/images/Berj.png" alt="berj">
+        </div>
+    </section>
+    <hr>
+    <!-- end about section -->
+
+    <!-- service section -->
+
+    <section class="service" id="service">
+        <h3 class="main-title">My Services</h3>
+            <div class="content">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="material-icons">money_off</i>
+                        <div class="card-info">
+                            <h4>free service</h4>
+                            <p>I Offer Free Services And Creating Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="material-icons">access_time</i>
+                        <div class="card-info">
+                            <h4>Designing time</h4>
+                            <p>I can finish the project in a few days</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="material-icons">brush</i>
+                        <div class="card-info">
+                            <h4>Web Design</h4>
+                            <p>I can build professional website for customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <hr>
+    <!-- end service section -->
+
+    <section class="contact" id="contact">
+        <h3 class="main-title" style="color: #fff;">Contact me</h3>
+        <div class="contact-form">
+            <form action="https://formsubmit.co/ghazarianberj98@gmail.com" method="POST">
+                <input type="text" name="name" id="fullname" placeholder="your fullname" required>
+                <input type="email" name="email" id="email" placeholder="your email" required>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="new email">
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Message me" required></textarea>
+                <button type="submit" id="sendMessage">Send Message</button>
+           </form>
+        </div>
+    </section>
+    <hr>
+
+    <!--  footer section -->
+        <footer>
+            <p>&copy; Berj Ghazarian, all right reserved</p>
+            <div class="social-icon">
+                <a href="https://www.facebook.com/berj.ghazarian.9/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/berjo__1998/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Berj98" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </footer>
+
+    <!-- end footer section -->
+
+    <!-- script src -->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/031c8c9edb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed(".auto-type", {
+            strings: ["Frontend Developer", "UI Designer", "Java Developer", "Graphic Designer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+</body>
+</html>
